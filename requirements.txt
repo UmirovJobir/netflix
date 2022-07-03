@@ -1,4 +1,4 @@
-asgiref==3.5.2
+asgiref==3.4.0
 attrs==21.4.0
 bcrypt==3.2.2
 certifi==2022.6.15
