@@ -1,0 +1,20 @@
+FROM python:3.7
+
+WORKDIR /code
+
+COPY . .
+
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+EXPOSE 8000
+
+ENTRYPOINT ["./entrypoint.sh"]
+
+
+SECRET_KEY=django-insecure-uz)q569nw3ynt+l4@-!+e+6qb)oh^x-2^gu9rj7=y6o%ghde(1
+
+POSTGRES_NAME=netflix
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=123
+POSTGRES_HOST=0.0.0.0
