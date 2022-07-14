@@ -22,9 +22,9 @@ jobs:
         script: |
           cd ~
           cd netflix
-          git pull https://github.com/UmirovJobir/netflix.git
+          git pull
           docker-compose down
           docker-compose build
           docker-compose up
       
-      
+
